@@ -1,0 +1,40 @@
+name: Publikacja
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publikacja:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      # Ustawienia produkcji zastępują ustawienia z repo; kawałek ich nie widzi.
+      - name: Ustawienia produkcji
+        run: |
+          printf '%s\n' '{"nazwa": "Pracownia Przykład", "godziny": "nieustalone"}' > strona/ustawienia.json
+      - name: Budowa
+        run: python3 zbuduj.py _site && echo "$GITHUB_SHA" > _site/wersja.txt
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      # Artefakt bywa przez chwilę niewidoczny dla deploy-pages („Found 0 artifact(s)”, 2 z 8 publikacji 2026-11-19).
+      - name: Przerwa na artefakt
+        run: sleep 20
+      - name: Publikacja na Pages
+        id: pages
+        uses: actions/deploy-pages@v4
