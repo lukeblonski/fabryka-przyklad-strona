@@ -1,7 +1,7 @@
 ---
 change_id: strona-godziny
 title: Godziny otwarcia na stronie
-status: planned
+status: plan_reviewed
 created: 2026-11-19
 updated: 2026-11-19
 archived_at: null
@@ -53,3 +53,9 @@ archived_at: null
 ## Zatrzymania autopilota
 
 - czas: 2026-11-19 05:20 · krok: plan · powód: odmowa uprawnień: Bash: cd /home/fabryka/fabryka && sed -n '/Kiedy pytać człowieka/,/^## /p' CLAUDE.md | head -80; cat docs/zgoda-czlowieka.md; grep -n "6\." docs/zasady-budowy.md | head · zrobiono: przyjęcie · skutek: krok przyjęty, łańcuch dalej
+
+## Decyzje triage
+
+### context/changes/strona-godziny/reviews/plan-review.md
+
+- brak uwag do triage (0 findings, werdykt SOUND)
