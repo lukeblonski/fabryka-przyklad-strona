@@ -14,3 +14,7 @@
 
 - **Change ID:** strona-godziny
 - **Status:** ready
+
+## Done
+
+- **S-02: Godziny otwarcia na stronie** — Archived 2026-11-19 → `context/archive/2026-11-19-strona-godziny/`. Lesson: —.
