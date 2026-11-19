@@ -17,6 +17,10 @@ class ZbudujTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as cel:
             self.assertIn("Godziny otwarcia: ", zbuduj.zbuduj(cel))
 
+    def test_godziny_otwarcia_maja_wartosc_pn_pt_9_17(self):
+        with tempfile.TemporaryDirectory() as cel:
+            self.assertIn("Godziny otwarcia: pn–pt 9–17", zbuduj.zbuduj(cel))
+
 
 if __name__ == "__main__":
     unittest.main()
