@@ -49,3 +49,7 @@ archived_at: null
   - Tymczasowe na stałe: nic
   - Odrzucone prostsze warianty: (a) godziny wpisane w szablon — omija ustawienia strony; (b) osobna podstrona — za dużo jak na jedną linię
 - Najbliżej konfliktu: nic.
+
+## Zatrzymania autopilota
+
+- czas: 2026-11-19 05:20 · krok: plan · powód: odmowa uprawnień: Bash: cd /home/fabryka/fabryka && sed -n '/Kiedy pytać człowieka/,/^## /p' CLAUDE.md | head -80; cat docs/zgoda-czlowieka.md; grep -n "6\." docs/zasady-budowy.md | head · zrobiono: przyjęcie · skutek: krok przyjęty, łańcuch dalej
