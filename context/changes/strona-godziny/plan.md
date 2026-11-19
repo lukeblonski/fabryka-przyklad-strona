@@ -113,6 +113,6 @@ Brak danych do migracji. Cofnięcie zmiany to przywrócenie poprzedniej wartośc
 
 #### Automated
 
-- [x] 1.1 Testy projektu przechodzą: `python3 -m unittest discover -s testy -t .`
-- [x] 1.2 Pole ma właściwą wartość: `python3 -c "import json; assert json.load(open('strona/ustawienia.json', encoding='utf-8'))['godziny'] == 'pn–pt 9–17'"`
-- [x] 1.3 Zbudowana strona podaje godziny: `d=$(mktemp -d) && python3 zbuduj.py "$d" && grep -F "Godziny otwarcia: pn–pt 9–17" "$d/index.html"`
+- [x] 1.1 Testy projektu przechodzą: `python3 -m unittest discover -s testy -t .` — daa717f
+- [x] 1.2 Pole ma właściwą wartość: `python3 -c "import json; assert json.load(open('strona/ustawienia.json', encoding='utf-8'))['godziny'] == 'pn–pt 9–17'"` — daa717f
+- [x] 1.3 Zbudowana strona podaje godziny: `d=$(mktemp -d) && python3 zbuduj.py "$d" && grep -F "Godziny otwarcia: pn–pt 9–17" "$d/index.html"` — daa717f

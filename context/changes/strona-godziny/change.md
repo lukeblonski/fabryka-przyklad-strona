@@ -1,7 +1,7 @@
 ---
 change_id: strona-godziny
 title: Godziny otwarcia na stronie
-status: implementing
+status: implemented
 created: 2026-11-19
 updated: 2026-11-19
 archived_at: null
