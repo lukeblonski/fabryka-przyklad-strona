@@ -1,7 +1,7 @@
 ---
 change_id: strona-godziny
 title: Godziny otwarcia na stronie
-status: implemented
+status: impl_reviewed
 created: 2026-11-19
 updated: 2026-11-19
 archived_at: null
@@ -59,3 +59,7 @@ archived_at: null
 ### context/changes/strona-godziny/reviews/plan-review.md
 
 - brak uwag do triage (0 findings, werdykt SOUND)
+
+### context/changes/strona-godziny/reviews/impl-review.md
+
+- brak uwag do triage (0 findings, werdykt APPROVED)
